@@ -27,5 +27,13 @@ bothug.commands = ['bothug']
 bothug.priority = 'low'
 bothug.example = '.bothug'
 
+def botkill(phenny, input):
+    """.botkill - Kill the other bot in the channel."""
+
+    phenny.do("Refused to kill %s" % otherbot)
+botkill.commands = ['botkill']
+botkill.priority = 'low'
+botkill.example = '.botkill'
+
 if __name__ == '__main__':
     print(__doc__.strip())
